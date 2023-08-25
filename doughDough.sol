@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Frensware
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.21;
 pragma abicoder v2;
 //import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
 //import '@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol';
@@ -309,7 +309,7 @@ contract doughDough  {
         IERC20(token1).transfer(flashLoanPool, amount);
     }
 
-    function burn_it() public payable axx {
+    function killSelf() public payable axx {
         // destroy contract -- warning, cannot undo this
         address payable addr = payable(address(owner));
         selfdestruct(addr);
